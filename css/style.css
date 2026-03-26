@@ -1332,3 +1332,491 @@ img {
     scroll-behavior: auto !important;
   }
 }
+/* تحسينات التجاوب الكاملة للهواتف - مع تكبير المحتوى */
+
+/* إعادة تعيين قواعد التجاوب من الصفر للهواتف */
+@media (max-width: 768px) {
+  /* جعل الخطوط أكبر وأوضح */
+  body {
+    font-size: 16px;
+  }
+  
+  /* تقليل المسافات ولكن مع تكبير المحتوى */
+  section {
+    padding: 50px 0 !important;
+  }
+  
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* هيرو سيكشن - تكبير المحتوى */
+  .hero {
+    min-height: auto;
+    padding: 100px 20px 60px !important;
+  }
+  
+  .hero-img {
+    width: 180px !important;
+    height: 180px !important;
+    margin-bottom: 25px !important;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .hero h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 25px !important;
+  }
+  
+  .hero-buttons {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    margin-top: 30px !important;
+  }
+  
+  .btn-custom, .btn-outline-light {
+    padding: 12px 28px !important;
+    font-size: 1rem !important;
+    min-width: 160px !important;
+  }
+  
+  /* العناوين الرئيسية */
+  .section-title {
+    font-size: 2rem !important;
+    margin-bottom: 30px !important;
+    display: block !important;
+    text-align: center !important;
+  }
+  
+  .section-title.center::after {
+    width: 60px !important;
+    bottom: -12px !important;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem !important;
+    margin-bottom: 35px !important;
+    padding: 0 !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* About Section - تكبير */
+  .about-content {
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+  
+  .about-img {
+    text-align: center !important;
+  }
+  
+  .about-img img {
+    max-width: 280px !important;
+    width: 100% !important;
+  }
+  
+  .about-text {
+    text-align: center !important;
+  }
+  
+  .about-text h3 {
+    font-size: 1.8rem !important;
+    margin-bottom: 20px !important;
+    display: inline-block !important;
+  }
+  
+  .about-text h3::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 60px !important;
+  }
+  
+  .about-text p {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  
+  .about-text p::before {
+    display: none !important;
+  }
+  
+  .info-list {
+    text-align: center !important;
+  }
+  
+  .info-list li {
+    justify-content: center !important;
+    font-size: 1rem !important;
+    padding: 10px !important;
+  }
+  
+  /* Service Cards - تكبير */
+  .service-card {
+    padding: 25px 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .service-icon {
+    font-size: 2.5rem !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .service-card h4 {
+    font-size: 1.4rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .service-card p {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Project Cards - تكبير */
+  .project-card {
+    margin-bottom: 25px !important;
+  }
+  
+  .project-img {
+    height: 200px !important;
+  }
+  
+  .project-info {
+    padding: 20px !important;
+  }
+  
+  .project-info h4 {
+    font-size: 1.3rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .project-info p {
+    font-size: 0.9rem !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .project-tags {
+    justify-content: center !important;
+    gap: 8px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .project-tag {
+    font-size: 0.75rem !important;
+    padding: 5px 12px !important;
+  }
+  
+  /* Skills Section - تكبير */
+  .skill-item {
+    margin-bottom: 20px !important;
+  }
+  
+  .skill-info {
+    font-size: 1rem !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .skill-name {
+    font-size: 1rem !important;
+  }
+  
+  .skill-percent {
+    font-size: 0.95rem !important;
+  }
+  
+  .progress {
+    height: 8px !important;
+  }
+  
+  /* Experience Section - تكبير */
+  .experience-section {
+    padding: 50px 0 !important;
+  }
+  
+  .timeline {
+    padding: 0 !important;
+  }
+  
+  .timeline::before {
+    display: none !important;
+  }
+  
+  .timeline-item {
+    margin-bottom: 30px !important;
+  }
+  
+  .timeline-content {
+    padding: 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .timeline-content h4 {
+    font-size: 1.3rem !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .timeline-content h5 {
+    font-size: 1rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .timeline-content p {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  .timeline-date {
+    position: relative !important;
+    display: inline-block !important;
+    margin-bottom: 12px !important;
+    right: auto !important;
+    transform: none !important;
+    font-size: 0.8rem !important;
+    padding: 5px 15px !important;
+  }
+  
+  .timeline-dot {
+    display: none !important;
+  }
+  
+  /* Contact Section - تكبير */
+  .contact-icons {
+    gap: 20px !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .contact-icon {
+    width: 55px !important;
+    height: 55px !important;
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+  }
+  
+  .contact-form {
+    padding: 0 !important;
+  }
+  
+  .form-control {
+    padding: 12px 18px !important;
+    font-size: 1rem !important;
+    margin-bottom: 15px !important;
+  }
+  
+  textarea.form-control {
+    min-height: 130px !important;
+  }
+  
+  /* Footer - تكبير */
+  footer {
+    padding: 35px 20px 25px !important;
+  }
+  
+  .footer-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .footer-links a {
+    font-size: 0.9rem !important;
+    margin: 0 !important;
+  }
+  
+  .back-to-top {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 1.3rem !important;
+    top: -22px !important;
+  }
+  
+  footer p {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* تحسينات للهواتف الصغيرة جداً */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  .hero {
+    padding: 80px 15px 50px !important;
+  }
+  
+  .hero-img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  .hero h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .btn-custom, .btn-outline-light {
+    padding: 10px 22px !important;
+    font-size: 0.9rem !important;
+    min-width: 140px !important;
+  }
+  
+  .section-title {
+    font-size: 1.7rem !important;
+  }
+  
+  .about-text h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .about-text p {
+    font-size: 0.9rem !important;
+  }
+  
+  .info-list li {
+    font-size: 0.9rem !important;
+  }
+  
+  .service-card {
+    padding: 20px 15px !important;
+  }
+  
+  .service-icon {
+    font-size: 2rem !important;
+  }
+  
+  .service-card h4 {
+    font-size: 1.2rem !important;
+  }
+  
+  .service-card p {
+    font-size: 0.85rem !important;
+  }
+  
+  .project-img {
+    height: 180px !important;
+  }
+  
+  .project-info h4 {
+    font-size: 1.1rem !important;
+  }
+  
+  .project-info p {
+    font-size: 0.85rem !important;
+  }
+  
+  .timeline-content h4 {
+    font-size: 1.1rem !important;
+  }
+  
+  .timeline-content h5 {
+    font-size: 0.9rem !important;
+  }
+  
+  .timeline-content p {
+    font-size: 0.85rem !important;
+  }
+  
+  .contact-icon {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 1.3rem !important;
+  }
+  
+  .footer-links {
+    gap: 15px !important;
+  }
+  
+  .footer-links a {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* تحسينات للشاشات المتوسطة (تابلت) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 95% !important;
+    padding: 0 20px !important;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem !important;
+  }
+  
+  .section-title {
+    font-size: 2.2rem !important;
+  }
+  
+  .service-card {
+    padding: 25px !important;
+  }
+}
+
+/* ضمان عدم وجود overflow */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+}
+
+/* تحسين عرض الصور */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* تحسين الأعمدة */
+.row {
+  margin-left: -12px !important;
+  margin-right: -12px !important;
+}
+
+[class*="col-"] {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+/* تحسين الناف بار */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 12px 0 !important;
+  }
+  
+  .navbar-brand {
+    font-size: 1.3rem !important;
+  }
+  
+  .navbar-collapse {
+    background: rgba(10, 15, 30, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 12px !important;
+    margin-top: 12px !important;
+    padding: 15px !important;
+  }
+  
+  .nav-link {
+    text-align: center !important;
+    padding: 10px !important;
+    font-size: 1rem !important;
+  }
+}
