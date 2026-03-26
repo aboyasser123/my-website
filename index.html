@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <!-- Local CSS Files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- Google Fonts (CDN - يفضل تبقى) -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Particles JS -->
+  <script src="js/particles.min.js"></script>
+</head>
+  <body>
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-code"></i> أحمد الحمود
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="تبديل القائمة"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">عنّي</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">مشاريعي</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">مهاراتي</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">خبراتي</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">تواصل معي</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content" data-aos="fade-up">
+      <img
+        src="/assets/images/profile.jpg"
+        alt="صورتي الشخصية"
+        class="hero-img"
+        loading="lazy"
+        width="220"
+        height="220"
+      />
+      <h1>أحمد الحمود</h1>
+      <h3>
+        <span id="typing-text"></span>
+      </h3>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-custom">تصفح أعمالي</a>
+        <a href="#contact" class="btn btn-outline-light">تواصل معي</a>
+        <a href="MY-CV 01.pdf" class="btn btn-outline-light">السيرة الذاتية</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="التمرير للأسفل">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="container py-5" id="about">
+    <h2 class="section-title center" data-aos="fade-up">من أنا؟</h2>
+    <p class="section-subtitle text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+      طالب هندسة معلوماتية وشغوف بعالم البرمجة وتطوير الويب
+    </p>
+    
+    <div class="row align-items-center">
+      <!-- صورة شخصية -->
+      <div class="col-md-4 text-center mb-4 mb-md-0" data-aos="fade-right">
+        <div class="about-img">
+          <img src="/assets/images/profile.jpg"  class="img-fluid rounded shadow">
+        </div>
+      </div>
+      
+      <!-- نص تعريفي -->
+      <div class="col-md-8" data-aos="fade-left">
+        <h3 class="mb-3">أحمد الحمود</h3>
+        <p class="mb-3">
+          أنا طالب في السنة الثالثة بكلية الهندسة المعلوماتية في جامعة حلب. أحب تطوير الويب والتطبيقات
+          البرمجية، وأسعى لتحويل أفكاري إلى مشاريع عملية صغيرة تعكس شغفي بالمجال.
+        </p>
+        <p class="mb-3">
+          أتعلم باستمرار من خلال الكورسات والمشاريع الأكاديمية والشخصية، وأسعى لبناء أساس قوي
+          في تطوير الواجهات الأمامية والخلفية وقواعد البيانات.
+        </p>
+        
+        <!-- معلومات سريعة -->
+        <ul class="info-list list-unstyled mt-4">
+          <li class="mb-2" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-graduation-cap"></i>
+            طالب هندسة معلوماتية - جامعة حلب
+          </li>
+          <li class="mb-2" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-map-marker-alt"></i>
+            حلب, سوريا
+          </li>
+          <li class="mb-2" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-envelope"></i>
+            ahmadalhamod2792020@gmail.com
+          </li>
+          <li class="mb-2" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-phone-alt"></i>
+            +963 968 164 675
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section py-5" id="projects">
+  <div class="container">
+    <h2 class="section-title center" data-aos="fade-up">مشاريعي</h2>
+    <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="100">
+      مجموعة من المشاريع التي طورتها خلال فترة دراستي ومشاريعي الشخصية
+    </p>
+
+    <div class="row g-4">
+      <!-- Project 1: نظام إدارة الطلاب -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <a href="projects/student-management/" class="text-decoration-none">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="assets/images/schoole.jpg" alt="نظام إدارة الطلاب" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h4>نظام إدارة الطلاب</h4>
+              <p>
+                نظام متكامل لإدارة العملية التعليمية، يشمل لوحات تحكم منفصلة للمدير والمعلمين والطلاب.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <span class="btn btn-sm btn-custom">التفاصيل <i class="fas fa-arrow-left me-1"></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project 2: نظام السكن الجامعي -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <a href="projects/dorm-management/" class="text-decoration-none">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="assets/images/dorm_project.jpg" alt="نظام السكن الجامعي" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h4>نظام إدارة السكن الجامعي</h4>
+              <p>
+                منصة شاملة لإدارة السكن الجامعي بأربع واجهات مختلفة للطلاب والمشرفين والمسؤولين والصيانة.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Laravel</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">Tailwind CSS</span>
+                <span class="project-tag">Livewire</span>
+              </div>
+              <div class="project-links">
+                <span class="btn btn-sm btn-custom">التفاصيل <i class="fas fa-arrow-left me-1"></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project 3: نظام اختبارات الأتمتة (جديد) -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+        <a href="projects/automation-testing/" class="text-decoration-none">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="assets/images/automation_testing.jpg" alt="نظام اختبارات الأتمتة" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h4>نظام اختبارات الأتمتة</h4>
+              <p>
+                منصة متكاملة لإدارة الاختبارات الآلية، تشمل إنشاء الاختبارات، تصحيح آلي، وتقارير مفصلة للطلاب.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Django</span>
+                <span class="project-tag">Selenium</span>
+                <span class="project-tag">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <span class="btn btn-sm btn-custom">التفاصيل <i class="fas fa-arrow-left me-1"></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project 4: الموقع الشخصي -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <a href="projects/portfolio/" class="text-decoration-none">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="assets/images/portfolio_site.png" alt="موقع شخصي" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h4>الموقع الشخصي (Portfolio)</h4>
+              <p>
+                تصميم وتطوير موقع شخصي لعرض المشاريع والمهارات مع تأثيرات حركية وتصميم متجاوب.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Bootstrap</span>
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <span class="btn btn-sm btn-custom">التفاصيل <i class="fas fa-arrow-left me-1"></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project 5: تطبيق Flutter -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <a href="projects/flutter-damage/" class="text-decoration-none">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="assets/images/flutter_project.jpg" alt="تطبيق Flutter" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <h4>تطبيق Flutter لحصر الأضرار</h4>
+              <p>
+                تطبيق جوال لتسجيل وحصر المنازل المتضررة ميدانياً مع رفع صور وتحديد الموقع الجغرافي.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Dart</span>
+                <span class="project-tag">Firebase</span>
+              </div>
+              <div class="project-links">
+                <span class="btn btn-sm btn-custom">التفاصيل <i class="fas fa-arrow-left me-1"></i></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section class="container py-5" id="skills">
+    <h2 class="section-title center" data-aos="fade-up">مهاراتي التقنية</h2>
+    <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="100">
+      المهارات التي اكتسبتها من دراستي الجامعية والمشاريع العملية والشخصية
+    </p>
+
+    <div class="row g-5 mt-4">
+      
+      <!-- Programming Languages -->
+      <div class="col-md-6" data-aos="fade-up">
+        <h4 class="mb-4 text-primary">
+          <i class="fas fa-code me-2"></i> لغات البرمجة
+        </h4>
+
+        <!-- C++ -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span><i class="fas fa-code text-secondary me-2"></i>C++</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%"></div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span><i class="fab fa-java text-warning me-2"></i>Java</span>
+            <span class="skill-percent">65%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 65%"></div>
+          </div>
+        </div>
+
+        <!-- Flutter"->"Dart -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span><i class="fab fa-Dart text-info me-2"></i>Flutter & Dart</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="mb-4 text-primary">
+          <i class="fas fa-laptop-code me-2"></i> تطوير الويب
+        </h4>
+
+        <!-- HTML & CSS -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span><i class="fab fa-html5 text-danger me-2"></i>HTML5 / 
+                  <i class="fab fa-css3-alt text-primary"></i> CSS3</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span><i class="fab fa-js-square text-warning me-2"></i>JavaScript</span>
+            <span class="skill-percent">60%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 60%"></div>
+          </div>
+        </div>
+
+        <!-- PHP & MySQL -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span><i class="fab fa-php text-secondary me-2"></i>PHP & 
+                  <i class="fas fa-database text-info"></i> MySQL</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Others -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="mb-4 text-primary">
+          <i class="fas fa-tools me-2"></i> أدوات وتقنيات
+        </h4>
+
+        <!-- Git -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span><i class="fab fa-git-alt text-danger me-2"></i>Git & GitHub</span>
+            <span class="skill-percent">60%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 60%"></div>
+          </div>
+        </div>
+
+        <!-- ICDL -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span><i class="fab fa-Exel text-purple me-2"></i>ICDL</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="mb-4 text-primary">
+          <i class="fas fa-language me-2"></i> اللغات
+        </h4>
+
+        <!-- Arabic -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span>العربية</span>
+            <span class="skill-percent">100%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+        </div>
+
+        <!-- English -->
+        <div class="skill-item mb-3">
+          <div class="skill-info d-flex justify-content-between">
+            <span>الإنجليزية</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-section py-5" id="experience">
+    <div class="container">
+      <h2 class="section-title center" data-aos="fade-up">خبراتي</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="100">
+        رحلتي في تعلم البرمجة والعمل على المشاريع الأكاديمية والشخصية
+      </p>
+      
+      <div class="timeline mt-5">
+        
+        <!-- Education -->
+        <div class="timeline-item" data-aos="fade-up">
+          <!-- <div class="timeline-date">2021 - الآن</div>
+          <div class="timeline-dot"></div> -->
+          <div class="timeline-content">
+            <h4>طالب هندسة معلوماتية</h4>
+            <h5>جامعة حلب</h5>
+            <p>
+              أدرس هندسة المعلوماتية في السنة الثالثة، وأركز على البرمجة وتطوير الويب وقواعد البيانات من خلال المشاريع الأكاديمية.
+            </p>
+          </div>
+        </div>
+
+        <!-- Academic Project Experience -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <!-- <div class="timeline-date">2022 - 2024</div>
+          <div class="timeline-dot"></div> -->
+          <div class="timeline-content">
+            <h4>مشاريع أكاديمية وشخصية</h4>
+            <h5>PHP, MySQL, Java, Flutter</h5>
+            <p>
+              قمت بتطوير عدة مشاريع مثل نظام إدارة طلاب، تطبيق قائمة مهام، وموقع شخصي تفاعلي، مما ساعدني على فهم عملي لتطوير البرمجيات.
+            </p>
+          </div>
+        </div>
+
+        <!-- Self Learning -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <!-- <div class="timeline-date">2021 - الآن</div>
+          <div class="timeline-dot"></div> -->
+          <div class="timeline-content">
+            <h4>تعلم ذاتي عبر الإنترنت</h4>
+            <h5>دورات على منصات مثل Udemy و YouTube</h5>
+            <p>
+              تعلمت أساسيات تطوير الويب (HTML, CSS, JS, PHP) وقواعد البيانات، بالإضافة إلى تجربة Flutter لبناء تطبيقات موبايل بسيطة.
+            </p>
+          </div>
+        </div>
+
+        <!-- Voluntary / Training -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="timeline-date">2023</div>
+          <div class="timeline-dot"></div> -->
+          <div class="timeline-content">
+            <h4>تجربة تطوعية / تدريب عملي</h4>
+            <h5>مشروع منظمة خيرية (تطوعي)</h5>
+            <p>
+              شاركت في بناء تطبيق تجريبي لتسجيل المنازل المتضررة باستخدام Flutter وقاعدة بيانات محلية ضمن مشروع تدريبي.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section py-5" id="contact">
+    <div class="contact-container container">
+      <h2 class="section-title center" data-aos="fade-up">تواصل معي</h2>
+      <p class="section-subtitle text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        يمكنك التواصل معي مباشرة عبر أي من وسائل التواصل الاجتماعي التالية
+      </p>
+
+      <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+        <a href="mailto:ahmadalhamod2792020@gmail.com" aria-label="البريد الإلكتروني" class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/aboyasser123/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="contact-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="contact-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://t.me/+963968164675" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="contact-icon">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://wa.me/+963968164675" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="contact-icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.facebook.com/share/19GegQuPfx/ " target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="contact-icon">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/ahmad1_1_2500/profilecard/?igsh=bHF1OHBycWJkdWhl" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="contact-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#home" class="back-to-top" aria-label="العودة للأعلى">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <div class="footer-links">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">عنّي</a>
+      <a href="#projects">مشاريعي</a>
+      <a href="#contact">تواصل</a>
+    </div>
+    
+    <div class="mb-3">
+      <small>© 2025 جميع الحقوق محفوظة - أحمد الحمود</small>
+    </div>
+    
+    
+  </footer>
+
+   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
