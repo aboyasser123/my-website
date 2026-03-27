@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تحت الصيانة | أحمد الحمود</title>
+    <title>تم نقل الموقع | أحمد الحمود</title>
     <style>
         * {
             margin: 0;
@@ -23,135 +23,63 @@
             overflow-x: hidden;
         }
 
-        /* animated background */
+        /* animated background particles effect */
         body::before {
             content: '';
             position: absolute;
             width: 100%;
             height: 100%;
-            background-image: 
-                radial-gradient(circle at 20% 40%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 50% 90%, rgba(0, 212, 255, 0.03) 0%, transparent 60%);
+            background-image: radial-gradient(circle at 25% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+                              radial-gradient(circle at 75% 30%, rgba(0, 212, 255, 0.05) 0%, transparent 50%);
             pointer-events: none;
-        }
-
-        /* animated dots */
-        body::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-image: radial-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px);
-            background-size: 40px 40px;
-            pointer-events: none;
-            animation: moveDots 20s linear infinite;
-        }
-
-        @keyframes moveDots {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: 40px 40px;
-            }
         }
 
         .container {
-            max-width: 700px;
+            max-width: 800px;
             width: 100%;
             animation: fadeInUp 0.8s ease-out;
-            position: relative;
-            z-index: 1;
         }
 
         .card {
             background: rgba(17, 23, 43, 0.95);
             backdrop-filter: blur(10px);
-            border-radius: 40px;
+            border-radius: 30px;
             padding: 50px 40px;
             text-align: center;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
             border: 1px solid rgba(0, 212, 255, 0.2);
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
         .card:hover {
+            transform: translateY(-5px);
             border-color: rgba(0, 212, 255, 0.4);
             box-shadow: 0 30px 60px -15px rgba(0, 212, 255, 0.2);
         }
 
-        /* animated gear icon */
         .icon-wrapper {
-            width: 120px;
-            height: 120px;
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(0, 212, 255, 0.05));
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 212, 255, 0.05));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 25px;
-            border: 2px solid rgba(0, 212, 255, 0.4);
-            animation: rotate 4s linear infinite, pulseGlow 2s ease-in-out infinite;
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes pulseGlow {
-            0%, 100% {
-                box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.3);
-                border-color: rgba(0, 212, 255, 0.4);
-            }
-            50% {
-                box-shadow: 0 0 0 15px rgba(0, 212, 255, 0);
-                border-color: rgba(0, 212, 255, 0.8);
-            }
+            border: 2px solid rgba(0, 212, 255, 0.5);
+            animation: pulse 2s infinite;
         }
 
         .icon-wrapper i {
-            font-size: 55px;
+            font-size: 48px;
             color: #00d4ff;
-            animation: iconPulse 1.5s ease-in-out infinite;
-        }
-
-        @keyframes iconPulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
         }
 
         h1 {
             color: #00d4ff;
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 15px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-        }
-
-        .maintenance-badge {
-            display: inline-block;
-            background: rgba(0, 212, 255, 0.2);
-            border-radius: 50px;
-            padding: 6px 18px;
-            margin-bottom: 20px;
-            font-size: 0.85rem;
-            color: #00d4ff;
-            border: 1px solid rgba(0, 212, 255, 0.3);
-        }
-
-        .maintenance-badge i {
-            margin-left: 6px;
-            font-size: 0.8rem;
+            font-weight: 700;
         }
 
         .message-box {
@@ -166,7 +94,7 @@
         .message-box p {
             color: #e0e0e0;
             line-height: 1.8;
-            font-size: 1rem;
+            font-size: 1.05rem;
             margin-bottom: 12px;
         }
 
@@ -179,170 +107,67 @@
             font-weight: 600;
         }
 
-        .apology {
-            background: rgba(255, 107, 107, 0.1);
+        .redirect-box {
+            background: rgba(0, 212, 255, 0.1);
             border-radius: 15px;
-            padding: 18px;
-            margin: 20px 0;
-            border: 1px solid rgba(255, 107, 107, 0.3);
-            text-align: center;
+            padding: 20px;
+            margin: 25px 0;
+            border: 1px dashed rgba(0, 212, 255, 0.4);
         }
 
-        .apology i {
-            color: #ff6b6b;
-            font-size: 1.3rem;
-            margin-left: 8px;
+        .redirect-text {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 15px;
         }
 
-        .apology p {
-            color: #ffb4b4;
-            font-size: 0.95rem;
-            margin: 0;
-        }
-
-        .progress-container {
-            margin: 30px 0;
-        }
-
-        .progress-label {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-            font-size: 0.85rem;
-            color: rgba(224, 224, 224, 0.8);
-        }
-
-        .progress-bar-bg {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            height: 8px;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            background: linear-gradient(90deg, #00d4ff, #009fcc);
-            width: 0%;
-            height: 100%;
-            border-radius: 20px;
-            animation: fillProgress 8s ease-in-out infinite;
-            position: relative;
-        }
-
-        @keyframes fillProgress {
-            0% {
-                width: 10%;
-            }
-            50% {
-                width: 65%;
-            }
-            100% {
-                width: 95%;
-            }
-        }
-
-        .progress-fill::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 40px;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            animation: shine 1.5s infinite;
-        }
-
-        @keyframes shine {
-            0% {
-                transform: translateX(-100%);
-            }
-            100% {
-                transform: translateX(200%);
-            }
-        }
-
-        .estimated-time {
-            margin-top: 12px;
-            font-size: 0.85rem;
+        .countdown {
+            font-size: 2rem;
+            font-weight: 800;
             color: #00d4ff;
-            text-align: center;
-        }
-
-        .estimated-time i {
-            margin-left: 5px;
-        }
-
-        .btn-refresh {
+            background: rgba(0, 0, 0, 0.3);
             display: inline-block;
-            background: rgba(0, 212, 255, 0.15);
-            color: #00d4ff;
-            font-weight: 600;
-            padding: 12px 32px;
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin: 15px 0;
+            font-family: monospace;
+            letter-spacing: 2px;
+        }
+
+        .btn-redirect {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #009fcc);
+            color: #0a0f1e;
+            font-weight: bold;
+            padding: 14px 40px;
             border-radius: 50px;
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
-            margin-top: 20px;
-            border: 1px solid rgba(0, 212, 255, 0.4);
-            cursor: pointer;
-        }
-
-        .btn-refresh:hover {
-            background: rgba(0, 212, 255, 0.3);
-            transform: translateY(-2px);
-            border-color: rgba(0, 212, 255, 0.8);
-        }
-
-        .notification-form {
-            margin-top: 25px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .notification-form p {
-            font-size: 0.85rem;
-            color: rgba(224, 224, 224, 0.7);
-            margin-bottom: 12px;
-        }
-
-        .email-input {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .email-input input {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(0, 212, 255, 0.3);
-            border-radius: 50px;
-            padding: 10px 20px;
-            color: white;
-            font-size: 0.9rem;
-            flex: 1;
-            min-width: 180px;
-            font-family: inherit;
-        }
-
-        .email-input input:focus {
-            outline: none;
-            border-color: #00d4ff;
-            background: rgba(0, 212, 255, 0.1);
-        }
-
-        .email-input button {
-            background: #00d4ff;
-            color: #0a0f1e;
+            margin-top: 10px;
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3);
             border: none;
-            border-radius: 50px;
-            padding: 10px 24px;
-            font-weight: bold;
             cursor: pointer;
-            transition: all 0.3s ease;
         }
 
-        .email-input button:hover {
-            background: #009fcc;
-            transform: translateY(-2px);
+        .btn-redirect:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.5);
+            background: linear-gradient(135deg, #00e4ff, #00b5e0);
+        }
+
+        .btn-redirect:active {
+            transform: translateY(0);
+        }
+
+        .note {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: rgba(224, 224, 224, 0.6);
+        }
+
+        .note i {
+            margin-left: 5px;
         }
 
         .social-links {
@@ -353,16 +178,16 @@
         }
 
         .social-links a {
-            color: rgba(224, 224, 224, 0.5);
-            font-size: 1.2rem;
+            color: rgba(224, 224, 224, 0.6);
+            font-size: 1.3rem;
             transition: all 0.3s ease;
-            width: 38px;
-            height: 38px;
+            width: 40px;
+            height: 40px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.05);
         }
 
         .social-links a:hover {
@@ -382,41 +207,38 @@
             }
         }
 
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.4);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(0, 212, 255, 0);
+            }
+        }
+
         @media (max-width: 600px) {
             .card {
-                padding: 35px 25px;
+                padding: 30px 20px;
             }
             
             h1 {
-                font-size: 1.5rem;
-            }
-            
-            .icon-wrapper {
-                width: 90px;
-                height: 90px;
-            }
-            
-            .icon-wrapper i {
-                font-size: 40px;
+                font-size: 1.6rem;
             }
             
             .message-box p {
-                font-size: 0.9rem;
+                font-size: 0.95rem;
             }
             
-            .btn-refresh {
-                padding: 10px 25px;
-                font-size: 0.9rem;
+            .btn-redirect {
+                padding: 12px 30px;
+                font-size: 1rem;
             }
             
-            .email-input input {
-                padding: 8px 16px;
-                font-size: 0.85rem;
-            }
-            
-            .email-input button {
-                padding: 8px 20px;
-                font-size: 0.85rem;
+            .countdown {
+                font-size: 1.5rem;
+                padding: 6px 16px;
             }
         }
     </style>
@@ -427,127 +249,100 @@
     <div class="container">
         <div class="card">
             <div class="icon-wrapper">
-                <i class="fas fa-tools"></i>
+                <i class="fas fa-server"></i>
             </div>
             
-            <div class="maintenance-badge">
-                <i class="fas fa-wrench"></i>
-              النظام تحت الصيانة  بسبب خلل طارئ             </div>
-            
-            <h1>نعمل على تحسين تجربتك</h1>
+            <h1>تم نقل الموقع إلى خادم جديد</h1>
             
             <div class="message-box">
                 <p>
-                    <i class="fas fa-heart" style="color: #ff6b6b; margin-left: 8px;"></i>
-                    <span class="highlight">نعتذر عن أي إزعاج</span>
+                    <i class="fas fa-exclamation-triangle" style="color: #ff6b6b; margin-left: 8px;"></i>
+                    <span class="highlight">عذراً للتغيير</span>
                 </p>
                 <p>
-                    نقوم حاليًا بإجراء <span class="highlight">تحديثات وتحسينات تقنية</span> على الموقع 
-                    لضمان تقديم أفضل تجربة ممكنة لكم.
+                    نظرًا لقرب انتهاء الاشتراك في هذا السيرفر، وحرصًا منا على استمرارية الخدمة وجودة الأداء، 
+                    <span class="highlight">تم نقل الموقع بالكامل إلى سيرفر جديد</span> أكثر استقرارًا وسرعة.
                 </p>
                 <p>
-                    هذه الصيانة <span class="highlight">بسيطة وقصيرة جدًا</span>، وسنعود لكم قريبًا 
-                    بإذن الله بموقع أكثر سرعة واحترافية.
+                    للحفاظ على تجربة تصفح سلسة ومستمرة، يرجى الانتقال إلى الرابط الجديد أدناه.
                 </p>
                 <p style="margin-top: 12px;">
-                    <i class="fas fa-clock" style="color: #00d4ff; margin-left: 8px;"></i>
-                    الوقت المتوقع: <span class="highlight">خلال دقائق قليلة</span>
+                    <i class="fas fa-id-card" style="color: #00d4ff; margin-left: 8px;"></i>
+                    <span class="highlight">ملاحظة هامة:</span> بما أن هذا الموقع مضاف إلى السيرة الذاتية الرسمية، 
+                    نحرص أن تكون زيارتكم لتجربة احترافية دون أي انقطاع. نشكر تفهمكم.
                 </p>
             </div>
             
-            <div class="apology">
-                <i class="fas fa-hand-peace"></i>
-                <p>نشكركم على صبركم وتفهمكم .. نعتذر مرة أخرى عن أي تأخير</p>
+            <div class="redirect-box">
+                <div class="redirect-text">
+                    <i class="fas fa-arrow-left" style="margin-left: 8px;"></i>
+                    سيتم توجيهك تلقائيًا إلى الموقع الجديد خلال
+                </div>
+                <div class="countdown" id="countdown">5</div>
+                <div class="redirect-text" style="font-size: 0.9rem;">
+                    في حال لم يتم التوجيه تلقائيًا:
+                </div>
+                <a href="https://personal-website-ahmadalhammoud.wuaze.com/index.html" class="btn-redirect" id="redirectBtn">
+                    <i class="fas fa-external-link-alt" style="margin-left: 8px;"></i>
+                    اضغط هنا للانتقال إلى الموقع الجديد
+                </a>
             </div>
             
-            <div class="progress-container">
-                <div class="progress-label">
-                    <span>جاري التحديث</span>
-                    <span><i class="fas fa-sync-alt fa-fw fa-spin"></i> قيد التنفيذ</span>
-                </div>
-                <div class="progress-bar-bg">
-                    <div class="progress-fill"></div>
-                </div>
-                <div class="estimated-time">
-                    <i class="fas fa-hourglass-half"></i>
-                    من المتوقع الانتهاء خلال وقت قصير
-                </div>
+            <div class="note">
+                <i class="fas fa-info-circle"></i>
+                الموقع الجديد بنفس المحتوى والتصميم مع تحسينات في الأداء
             </div>
             
-            <!-- <button class="btn-refresh" onclick="window.location.reload()">
-                <i class="fas fa-sync-alt" style="margin-left: 8px;"></i>
-                تحديث الصفحة للتحقق من العودة
-            </button> -->
-            
-            <!-- <div class="notification-form">
-                <p><i class="fas fa-bell"></i> تريد إشعارًا فور انتهاء الصيانة؟</p>
-                <div class="email-input">
-                    <input type="email" placeholder="بريدك الإلكتروني" id="notifyEmail">
-                    <button onclick="notifyMe()">أخبرني عند الانتهاء</button>
-                </div>
-            </div> -->
-            
-            <!-- <div class="social-links">
+            <div class="social-links">
                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" aria-label="Email"><i class="far fa-envelope"></i></a>
-            </div> -->
+            </div>
         </div>
     </div>
     
     <script>
-        // Auto-refresh every 10 seconds to check if maintenance is done
-        let refreshInterval = setInterval(() => {
-            // You can optionally check a status endpoint here
-            // For now, just show a message
-            console.log("Checking if maintenance is complete...");
-        }, 10000);
+        // Target URL for redirect
+        const redirectUrl = 'https://personal-website-ahmadalhammoud.wuaze.com/index.html';
         
-        // Notify function
-        function notifyMe() {
-            const email = document.getElementById('notifyEmail').value;
-            if (email && email.includes('@')) {
-                alert(`📧 تم تسجيل بريدك: ${email}\n\nسنقوم بإعلامك فور انتهاء الصيانة.\nشكراً لثقتك بنا!`);
-                document.getElementById('notifyEmail').value = '';
+        // Countdown timer (5 seconds)
+        let seconds = 10;
+        const countdownElement = document.getElementById('countdown');
+        
+        function updateCountdown() {
+            if (seconds > 0) {
+                countdownElement.textContent = seconds;
+                seconds--;
+                setTimeout(updateCountdown, 1000);
             } else {
-                alert('الرجاء إدخال بريد إلكتروني صحيح');
+                // Redirect when countdown reaches 0
+                window.location.href = redirectUrl;
             }
         }
         
-        // Add automatic page refresh after 30 seconds (optional)
-        setTimeout(() => {
-            // You can enable this if you want auto-refresh
-            // window.location.reload();
-        }, 30000);
+        // Start countdown
+        updateCountdown();
         
-        // Update progress bar dynamically
-        const progressFill = document.querySelector('.progress-fill');
-        let width = 10;
-        setInterval(() => {
-            if (width < 95) {
-                width += Math.random() * 5;
-                if (width > 95) width = 95;
-                progressFill.style.width = width + '%';
-            }
-        }, 3000);
-        
-        // Show last update time
-        const now = new Date();
-        const timeString = now.toLocaleTimeString('ar-SA', { hour: '2-digit', minute: '2-digit' });
-        const timeElement = document.createElement('div');
-        timeElement.style.cssText = 'margin-top: 15px; font-size: 0.7rem; color: rgba(224,224,224,0.5);';
-        timeElement.innerHTML = `<i class="far fa-clock"></i> آخر تحديث: ${timeString}`;
-        document.querySelector('.progress-container').appendChild(timeElement);
-        
-        // Prevent accidental navigation
-        window.addEventListener('beforeunload', function(e) {
-            // Optional: Show warning if trying to leave during maintenance
-            // e.preventDefault();
-            // e.returnValue = '';
+        // Manual redirect button
+        const redirectBtn = document.getElementById('redirectBtn');
+        redirectBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = redirectUrl;
         });
         
-        document.title = 'تحت الصيانة - نعتذر للإزعاج | أحمد الحمود';
+        // Optional: Add a small delay for smooth animation
+        setTimeout(() => {
+            document.querySelector('.card').style.opacity = '1';
+        }, 100);
+        
+        // Store in localStorage to avoid showing again for this session (optional)
+        if (!sessionStorage.getItem('redirect_notified')) {
+            sessionStorage.setItem('redirect_notified', 'true');
+        }
+        
+        // Add page title update
+        document.title = 'تم نقل الموقع إلى سيرفر جديد | أحمد الحمود';
     </script>
 </body>
 </html>
